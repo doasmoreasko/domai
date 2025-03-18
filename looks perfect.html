@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page with Hacking Theme</title>
+  <style>
+    /* Reset and basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff; /* Keep the background white */
+      color: #333; /* Default text color */
+      position: relative;
+    }
+
+    /* Matrix falling code effect */
+    .matrix {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Background layer */
+      pointer-events: none;
+      opacity: 0.1; /* Make the falling code faint */
+    }
+
+    .matrix span {
+      color: #00ff00; /* Green color for text */
+      font-family: "Courier New", monospace;
+      font-size: 20px;
+      white-space: nowrap;
+      position: absolute;
+      top: 0;
+      animation: fall 5s linear infinite;
+    }
+
+    @keyframes fall {
+      from {
+        top: -100%;
+      }
+      to {
+        top: 100%;
+      }
+    }
+
+    /* Horizontal header bar styling */
+    .header-bar {
+      width: 100%;
+      height: 1.5cm;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      z-index: 1000;
+    }
+
+    /* IBP Text Styling */
+    .header-bar .logo {
+      font-size: 2.5rem; /* Increased the size of "IBP" */
+      font-weight: bold; /* Make the logo bold */
+      margin-left: 2cm; /* Leaves 2 cm space from the left */
+      color: #333;
+    }
+
+    /* Navigation links styling */
+    .header-bar nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 1rem;
+      font-size: 1.2rem; /* Increased font size */
+      font-weight: bold; /* Make buttons text bold */
+      transition: color 0.3s;
+    }
+    .header-bar nav a:hover {
+      color: #007bff; /* Link hover color */
+    }
+
+    /* Main content styling */
+    .content {
+      padding: 2.5cm 2rem 2rem 2rem; /* Adjust for header space */
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Tagline and image container styling */
+    .tagline-container {
+      display: flex;
+      align-items: center;
+      margin-top: 3rem; /* Space from header */
+      margin-left: 2rem;
+      max-width: 100%; /* Ensures container takes full available width */
+    }
+
+    /* Image styling */
+    .tagline-container img {
+      width: 5cm; /* Increased image size */
+      height: auto;
+      margin-left: auto; /* Aligns image to the right */
+    }
+
+    /* Tagline text styling */
+    .tagline {
+      color: #001f3f; /* Dark navy blue */
+      font-size: 2cm; /* Makes text 2 cm big */
+      font-weight: bold;
+      max-width: 60%; /* Keeps text within the left part */
+    }
+
+    /* Get Started button styling */
+    .get-started-button {
+      background-color: #001f3f; /* Navy blue background */
+      color: #fff; /* White text */
+      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      margin-top: 1.5rem; /* Space between text and button */
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .get-started-button:hover {
+      background-color: #004080; /* Darker blue on hover */
+      transform: scale(1.05); /* Slightly increase the size on hover */
+    }
+
+    .get-started-button:focus {
+      outline: none;
+    }
+
+    /* Section styling */
+    section {
+      padding: 2rem;
+      margin-top: 3rem;
+      border-top: 2px solid #ddd;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+    
+  </style>
+  
+</head>
+<body>
+  
+
+  <!-- Horizontal Header Bar -->
+  <header class="header-bar">
+    <div class="logo">IBP</div> <!-- Bold and large "IBP" text -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="tagline-container">
+      <div class="tagline">All Your Files in One Secure Location.</div>
+      <img src="your-image.png" alt="Image description"> <!-- Replace 'your-image.png' with the path to your PNG image -->
+    </div>
+    
+    <!-- Get Started Button -->
+    <div class="tagline-container">
+      <button class="get-started-button">Get Started</button>
+    </div>
+  </main>
+
+  
+
+</body>
+</html>
